@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women with Baskets</title>
+
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f5e6cc;
+        text-align:center;
+    }
+    .container{
+        max-width:1000px;
+        margin:auto;
+    }
+    .artGrid{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:1px;
+    }
+    .artGrid img{
+        width:100%;
+        border:2px solid black;
+    }
+    /* Tablet */
+    @media(max-width:900px){
+        .artGrid{
+            grid-template-columns:repeat(2,1fr);
+        }
+    }
+    /* Mobile */
+    @media(max-width:500px){
+        .artGrid{
+            grid-template-columns:1fr;
+        }
+    }
+    video{
+        width:100%;
+        max-width:600px;
+        margin-top:20px;
+    }
+    fieldset{
+        margin-top:20px;
+        border:2px solid brown;
+    }
+    legend{
+        font-weight:bold;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Women with Baskets</h1>
+    </header>
+    
+    <div class="container">
+        <div class="artGrid">
+            <img src="../04 LabExer2/images/4.jpg" alt="4th img was here!">
+            <img src="../04 LabExer2/images/3.jpg" alt="3rd img was here!">
+            <img src="../04 LabExer2/images/1.jpg" alt="1st img was here!">
+            <img src="../04 LabExer2/images/6.jpg" alt="6th img was here!">
+            <img src="../04 LabExer2/images/2.jpg" alt="2nd img was here!">
+            <img src="../04 LabExer2/images/5.jpg" alt="5th img was here!">
+        </div>
+
+        <fieldset>
+            <legend>Short Introduction about Anita Magsaysay-Ho</legend>         
+                <p>
+                Anita Magsaysay-Ho was one of the most celebrated Filipino modernist painters 
+                and the only female member of the renowned Thirteen Moderns group. 
+                Her artworks are known for depicting the strength and grace of Filipino women, 
+                often portraying them performing everyday rural activities such as weaving, 
+                harvesting, and carrying baskets. Her painting <b>"Women with Baskets"</b> 
+                highlights the harmony, dignity, and collaborative spirit of Filipino women.
+                </p>
+        </fieldset>
+
+        <div class="artVideo">
+            <h3>Video about Anita Magsaysay-Ho</h3>
+            <video controls>
+                <source src="../04 LabExer2/vids/Anita.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</body>
+</html>
